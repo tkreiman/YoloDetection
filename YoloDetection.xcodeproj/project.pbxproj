@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		214DBD8920D31E860047958E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214DBD8820D31E860047958E /* AppDelegate.swift */; };
-		214DBD8B20D31E860047958E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214DBD8A20D31E860047958E /* ViewController.swift */; };
 		214DBD8E20D31E860047958E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 214DBD8C20D31E860047958E /* Main.storyboard */; };
 		214DBD9020D31E860047958E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 214DBD8F20D31E860047958E /* Assets.xcassets */; };
 		214DBD9320D31E860047958E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 214DBD9120D31E860047958E /* LaunchScreen.storyboard */; };
+		214DBDA220D31EAC0047958E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214DBD9A20D31EA80047958E /* ViewController.swift */; };
+		214DBDA320D31EAC0047958E /* CVPixelBuffer+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214DBD9B20D31EA80047958E /* CVPixelBuffer+Helpers.swift */; };
+		214DBDA420D31EAC0047958E /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214DBD9C20D31EA90047958E /* UIImage+CVPixelBuffer.swift */; };
+		214DBDA520D31EAC0047958E /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214DBD9D20D31EA90047958E /* BoundingBox.swift */; };
+		214DBDA620D31EAC0047958E /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214DBD9E20D31EA90047958E /* VideoCapture.swift */; };
+		214DBDA720D31EAC0047958E /* YOLO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214DBD9F20D31EA90047958E /* YOLO.swift */; };
+		214DBDA820D31EAC0047958E /* TinyYOLO.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 214DBDA020D31EAB0047958E /* TinyYOLO.mlmodel */; };
+		214DBDA920D31EAC0047958E /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214DBDA120D31EAC0047958E /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		214DBD8520D31E860047958E /* YoloDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoloDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		214DBD8820D31E860047958E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		214DBD8A20D31E860047958E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		214DBD8D20D31E860047958E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		214DBD8F20D31E860047958E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		214DBD9220D31E860047958E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		214DBD9420D31E860047958E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		214DBD9A20D31EA80047958E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../ObjectDetector/ObjectDetector/ViewController.swift; sourceTree = "<group>"; };
+		214DBD9B20D31EA80047958E /* CVPixelBuffer+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Helpers.swift"; sourceTree = "<group>"; };
+		214DBD9C20D31EA90047958E /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
+		214DBD9D20D31EA90047958E /* BoundingBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoundingBox.swift; sourceTree = "<group>"; };
+		214DBD9E20D31EA90047958E /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		214DBD9F20D31EA90047958E /* YOLO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YOLO.swift; sourceTree = "<group>"; };
+		214DBDA020D31EAB0047958E /* TinyYOLO.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TinyYOLO.mlmodel; sourceTree = "<group>"; };
+		214DBDA120D31EAC0047958E /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +69,14 @@
 			isa = PBXGroup;
 			children = (
 				214DBD8820D31E860047958E /* AppDelegate.swift */,
-				214DBD8A20D31E860047958E /* ViewController.swift */,
+				214DBD9D20D31EA90047958E /* BoundingBox.swift */,
+				214DBD9B20D31EA80047958E /* CVPixelBuffer+Helpers.swift */,
+				214DBDA120D31EAC0047958E /* Helpers.swift */,
+				214DBDA020D31EAB0047958E /* TinyYOLO.mlmodel */,
+				214DBD9C20D31EA90047958E /* UIImage+CVPixelBuffer.swift */,
+				214DBD9E20D31EA90047958E /* VideoCapture.swift */,
+				214DBD9A20D31EA80047958E /* ViewController.swift */,
+				214DBD9F20D31EA90047958E /* YOLO.swift */,
 				214DBD8C20D31E860047958E /* Main.storyboard */,
 				214DBD8F20D31E860047958E /* Assets.xcassets */,
 				214DBD9120D31E860047958E /* LaunchScreen.storyboard */,
@@ -136,7 +157,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				214DBD8B20D31E860047958E /* ViewController.swift in Sources */,
+				214DBDA720D31EAC0047958E /* YOLO.swift in Sources */,
+				214DBDA220D31EAC0047958E /* ViewController.swift in Sources */,
+				214DBDA620D31EAC0047958E /* VideoCapture.swift in Sources */,
+				214DBDA920D31EAC0047958E /* Helpers.swift in Sources */,
+				214DBDA320D31EAC0047958E /* CVPixelBuffer+Helpers.swift in Sources */,
+				214DBDA420D31EAC0047958E /* UIImage+CVPixelBuffer.swift in Sources */,
+				214DBDA520D31EAC0047958E /* BoundingBox.swift in Sources */,
+				214DBDA820D31EAC0047958E /* TinyYOLO.mlmodel in Sources */,
 				214DBD8920D31E860047958E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +305,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LCX682S6EY;
 				INFOPLIST_FILE = YoloDetection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kreeapps.YoloDetection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LCX682S6EY;
 				INFOPLIST_FILE = YoloDetection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kreeapps.YoloDetection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
